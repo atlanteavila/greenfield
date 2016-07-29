@@ -58,3 +58,5 @@ View the project roadmap [here](https://waffle.io/bananasbabay/greenfield)
 ## Contributing
 
 See [CONTRIBUTING.md](https://waffle.io/bananasbabay/greenfield) for contribution guidelines.
+
+[![Throughput Graph](https://graphs.waffle.io/bananasbabay/bananasbabay/throughput.svg)](https://waffle.io/bananasbabay/bananasbabay/metrics/throughput)
