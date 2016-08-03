@@ -7,7 +7,7 @@ var OwnerSchema = new Schema({
   age: Number,
   location: String,
   favorite: String,
-  numberOfBreeds: String,
+  numberOfBreeds: Number,
   numberOfDogs: String
 });
 
