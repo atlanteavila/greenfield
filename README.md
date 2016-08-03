@@ -1,4 +1,7 @@
 [![Stories in Ready](https://badge.waffle.io/bananasbabay/greenfield.png?label=ready&title=Ready)](https://waffle.io/bananasbabay/greenfield)
+[![Stories in In Progress](https://badge.waffle.io/bananasbabay/greenfield.png?label=ready&title=InProgress)](https://waffle.io/bananasbabay/greenfield)
+[![Stories in Done](https://badge.waffle.io/bananasbabay/greenfield.png?label=ready&title=Done)](https://waffle.io/bananasbabay/greenfield)
+
 # Puppy Love
 
 > Puppy Love lets you connect the dog that you care for with another dog that has an owner with the same thought process and love for their dog. 
