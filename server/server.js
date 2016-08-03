@@ -1,3 +1,4 @@
+
 var express = require('express');
 var mongoose = require('mongoose');
 var Dog = require('./app/scripts/models/dog');
