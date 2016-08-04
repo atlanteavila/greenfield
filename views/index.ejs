@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,600,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./bower_components/angular-material/angular-material.css" />
+  </head>
+  <body ng-app ="puppylove">
+   <sp-navbar></sp-navbar> 
+    <div ui-view></div>
+   <a href="#/about"> about</a>
+    <a href="#/"> home</a>
+     <a href="#/profile"> profile</a>
+    <div id="discover-header">
+      <span>Puppy Love</span>
+    </div>
+    <p>Welcome to <%= title %></p>
+    <div layout="row" ng-if="searchStr">
+      <div flex></div>
+   <form> 
+Enter your first name <input type="text" name="name">
+Enter your last name<input type="text" name="name">
+Enter your age <input type="number" name="birthday">
+Enter your location  <input type="text" name="location">
+Favorite Breed? <input type="text" name="favoritebreed">
+Number of Dogs? <input type="number" name="dognumber">
+   </form>
+      <div flex></div>
+  </body>
+</html>
