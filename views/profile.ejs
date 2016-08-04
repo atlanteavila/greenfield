@@ -1,31 +1,29 @@
-<md-content ng-cloak>
-  <section>
-    <div id="discover-header">
-      <span>Puppy Love</span>
-    </div>
-    <div layout="row" ng-if="searchStr">
-      <div flex></div>
-      <p flex="40" id="results-for">Results for:</p>
-      <div flex></div>
-    </div>
-    <div layout="row" ng-class="searchStr ? 'results-margin' : ''">
-      <div flex></div>
-        <md-input-container flex="40" md-no-float>
-          <input type="text" placeholder="Search for an owner" ng-keyup="searchOwner()" ng-model="searchStr">
-        </md-input-container>
-      <div flex></div>
-    </div>
-  </section>
-  <section layout="row">
-    <div flex></div>
-    <div flex="40" id="query-results-container" ng-if="OwnerResults && searchStr">
-      <div layout="row" layout-padding id="query-results" ng-if="owner.images" ng-repeat="owner in ownerResults | limitTo: 8 owner by $index">
-        <div ui-sref="owner({idOwner: owner.id})">
-          <img id="img-query-results" ng-src="{{owner.images[0].url}}" />
-          <span id="name-query-results" layout-padding>{{owner.name}}</span>
-        </div>
+<div class="tile is-ancestor">
+  <div class="tile is-vertical is-8">
+    <div class="tile">
+      <div class="tile is-parent is-vertical">
+        <article class="tile is-child">
+          Puppy Love
+        </article>
+        <article class="tile is-child">
+          <!-- Any content you want here -->
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child">
+          <!-- Any content you want here -->
+        </article>
       </div>
     </div>
-    <div flex></div>  
-  </section>
-</md-content>
+    <div class="tile is-parent">
+      <article class="tile is-child">
+       Puppy
+      </article>
+    </div>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child">
+      Owner
+    </article>
+  </div>
+</div>
