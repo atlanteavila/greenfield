@@ -5,7 +5,8 @@ angular.module('puppyLoveApp', [
     ' ngAnimate',
     'ngCookies',
     'ngMessages',
-    'ngRoute'
+    'ngRoute',
+    'pubnub.angular.service'
   ])
 .config(function($stateProvider, $urlRouterProvider, $compileProvider) {
     
@@ -31,7 +32,18 @@ angular.module('puppyLoveApp', [
             return Auth.$requireAuth();
           }
         }
-      });
+      })
+      .state('chat', {
+        url: '/chat',
+        templateUrl: 'views/chat.html',
+        controller: 'ChatCtrl',
+        resolve: {
+          currentAuth: function(Auth) {
+            return Auth.$requireAuth();
+          }
+        }
+      })
+      ;
         $urlRouterProvider
         .otherwise('/home');
   })
