@@ -32,20 +32,6 @@ angular.module('puppyLoveApp', [
           }
         }
       })
-      .state('chat', {
-        url: '/chat',
-        templateUrl: 'views/chat.html',
-        controller: 'ChatCtrl',
-        resolve: {
-          currentAuth: function(Auth) {
-            return Auth.$requireAuth();
-          }
-        }
-      })
-      ;
-        $urlRouterProvider
-        .otherwise('/home');
-  })
 
 .run(function($rootScope, $state, $mdDialog, $mdToast, $timeout) {
 
