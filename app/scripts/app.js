@@ -5,8 +5,7 @@ angular.module('puppyLoveApp', [
     ' ngAnimate',
     'ngCookies',
     'ngMessages',
-    'ngRoute',
-    'pubnub.angular.service'
+    'ngRoute'
   ])
 .config(function($stateProvider, $urlRouterProvider, $compileProvider) {
     
